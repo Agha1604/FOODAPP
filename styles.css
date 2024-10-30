@@ -1,0 +1,270 @@
+body {
+  background-color: cornsilk;
+}
+
+/*topheader*/
+.topheader {
+  position: fixed;
+  background-color: gray;
+  width: 100%;
+  /*sobrepuesto en 100*/
+  z-index: 100;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*espacio interno osea relleno entre el contenido de un elemento y su borde*/
+  padding: 0 20px;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 350px;
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 15px 20px;
+  color: red;
+  text-decoration: none;
+}
+
+.menu-horizontal li a:hover {
+  color: black;
+}
+
+.menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: gray;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+/*section video*/
+
+.FOODAPP {
+  background-color: cadetblue;
+  padding: 20px;
+}
+
+.content-FOODAPP {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.text-video {
+  width: 70%;
+}
+
+.text-video h2 {
+  font-size: 1, 5rem;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 55%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: black;
+  margin-top: 125px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.FOODAPP-info {
+  width: 100%;
+}
+
+.FOODAPP-info h3 {
+  color: red;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  margin-left: 125px;
+  margin-top: 150px;
+}
+
+.FOODAPP-info p {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  color: darkslategray;
+  margin-left: 125px;
+}
+
+.boton-siguiente {
+  margin-left: 125px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.boton-siguiente li a {
+  color: red;
+  text-decoration: none;
+}
+
+/*Section formulario*/
+.Inscripcion-Section {
+  background-color: rgb(23, 202, 187);
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.Container-Inscripcion {
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  /*Borde*/
+  border-radius: 10px;
+}
+
+form fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+}
+
+form ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+form li {
+  margin-bottom: 15px;
+}
+form label {
+  /* para el formulario*/
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+
+form input[type="text"],
+form select {
+  /*tamaño de donde escribes para el formulario*/
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+/*para el nombre */
+form input[name="fname"] {
+  font-size: 1rem;
+}
+
+form input[type="radio"] {
+  margin-left: 10px;
+}
+form .btn-frm-insc {
+  background-color: chocolate;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/*para ponerle color a los simbolos cuando lo tocas como enviar */
+form .btn-frm-insc:hover {
+  background-color: red;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+textarea {
+  border: 2px solid red;
+}
+
+/*PIE*/
+.footer-section {
+  background-color: cornsilk;
+  color: black;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  width: 20%;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: blue;
+  font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.footer-line {
+  border: 0;
+  height: 2px;
+  background-color: #d32f2f;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 1.5rem;
+  color: #d32f2f;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
